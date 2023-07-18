@@ -26,7 +26,9 @@
         android:layout_height="wrap_content"
         android:layout_margin="20dp"
         android:gravity="center"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/etNumber_Main"
+        app:layout_constraintTop_toTopOf="@+id/etNumber_Main">
 
       <de.hdodenhof.circleimageview.CircleImageView
           android:id="@+id/ivMain"
@@ -96,7 +98,7 @@
           app:layout_constraintStart_toStartOf="parent"
           app:layout_constraintTop_toBottomOf="@+id/etNumber_Main" />
 
-      <EditText
+      <TextView
           android:id="@+id/etDob_Main"
           android:layout_width="match_parent"
           android:layout_height="wrap_content"
@@ -108,6 +110,7 @@
           android:minWidth="48dp"
           android:minHeight="48dp"
           android:paddingLeft="10dp"
+          android:paddingTop="7dp"
           app:layout_constraintEnd_toEndOf="parent"
           app:layout_constraintStart_toStartOf="parent"
           app:layout_constraintTop_toBottomOf="@+id/etEmail_Main" />
@@ -122,6 +125,18 @@
           app:layout_constraintEnd_toEndOf="parent"
           app:layout_constraintStart_toStartOf="parent"
           app:layout_constraintTop_toBottomOf="@+id/etDob_Main" />
+
+      <com.google.android.material.floatingactionbutton.FloatingActionButton
+          android:id="@+id/fabdate"
+          android:layout_width="wrap_content"
+          android:layout_height="45dp"
+          android:layout_marginEnd="16dp"
+          android:layout_marginBottom="3dp"
+
+          android:clickable="true"
+          app:layout_constraintBottom_toBottomOf="@+id/etDob_Main"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:srcCompat="@drawable/ic_calender" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
