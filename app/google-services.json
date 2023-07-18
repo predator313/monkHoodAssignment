@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "902507941502",
+    "project_id": "monkhoodassignment",
+    "storage_bucket": "monkhoodassignment.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:902507941502:android:18ec52b3a0b335e495d22f",
+        "android_client_info": {
+          "package_name": "com.aamirashraf.monkhoodassignment"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "902507941502-092ks8elkgue9tdmgt5mkd00nk96odlo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAxKkm8sE4wpni0pIOoc4EJITmjyageRgk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "902507941502-092ks8elkgue9tdmgt5mkd00nk96odlo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

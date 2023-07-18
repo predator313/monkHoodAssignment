@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_bg"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+
+  <com.google.android.material.card.MaterialCardView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="20dp"
+      android:layout_marginEnd="20dp"
+      app:cardCornerRadius="20dp"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      android:background="@color/white">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+      <de.hdodenhof.circleimageview.CircleImageView
+          android:id="@+id/ivMain"
+          android:layout_width="150dp"
+          android:layout_height="150dp"
+          android:scaleType="centerCrop"
+          android:src="@drawable/def_profile"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="parent" />
+
+      <com.google.android.material.floatingactionbutton.FloatingActionButton
+          android:id="@+id/fabUpload"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginEnd="59dp"
+          android:layout_marginBottom="8dp"
+          android:src="@drawable/ic_camera"
+          app:layout_constraintBottom_toTopOf="@+id/etName_Main"
+          app:layout_constraintEnd_toEndOf="@+id/etName_Main" />
+
+      <EditText
+          android:id="@+id/etName_Main"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="20dp"
+          android:layout_marginTop="20dp"
+          android:layout_marginRight="20dp"
+          android:background="@drawable/edt_background"
+          android:hint="Name"
+          android:minWidth="48dp"
+          android:minHeight="48dp"
+          android:paddingLeft="10dp"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toBottomOf="@+id/ivMain" />
+
+      <EditText
+          android:id="@+id/etNumber_Main"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="20dp"
+          android:layout_marginTop="20dp"
+          android:layout_marginRight="20dp"
+          android:background="@drawable/edt_background"
+          android:hint="Phone Number"
+          android:minWidth="48dp"
+          android:minHeight="48dp"
+          android:paddingLeft="10dp"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toBottomOf="@+id/etName_Main" />
+
+      <EditText
+          android:id="@+id/etEmail_Main"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="20dp"
+          android:layout_marginTop="20dp"
+          android:layout_marginRight="20dp"
+          android:background="@drawable/edt_background"
+          android:hint="Email"
+          android:minWidth="48dp"
+          android:minHeight="48dp"
+          android:paddingLeft="10dp"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toBottomOf="@+id/etNumber_Main" />
+
+      <EditText
+          android:id="@+id/etDob_Main"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="20dp"
+          android:layout_marginTop="20dp"
+          android:layout_marginRight="20dp"
+          android:background="@drawable/edt_background"
+          android:hint="Enter Your DOB"
+          android:minWidth="48dp"
+          android:minHeight="48dp"
+          android:paddingLeft="10dp"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toBottomOf="@+id/etEmail_Main" />
+
+      <Button
+          android:id="@+id/btnSubmitMain"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="10dp"
+          android:text="Submit"
+          android:textSize="20sp"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toBottomOf="@+id/etDob_Main" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+  </com.google.android.material.card.MaterialCardView>
+
+</LinearLayout>
